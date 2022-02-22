@@ -15,8 +15,8 @@ me = client.users.me()
 
 workspace_id = me['workspaces'][0]['gid']
 
-account_list = [{'foo': 'bar'}]
+custom_field_data = [{'foo': 'bar'}]
 
-mycustfield = client.custom_fields.create_custom_field({'workspace' : workspace_id , 'name': 'FOO', 'resource_subtype' : 'enum', 'enum_options' : account_list})
+mycustfield = client.custom_fields.create_custom_field({'workspace' : workspace_id , 'name': 'FOO', 'resource_subtype' : 'enum', 'enum_options' : custom_field_data})
 
 print(mycustfield)
